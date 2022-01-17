@@ -1,0 +1,48 @@
+.product {
+  padding-top: rem(150);
+  position: relative;
+  @include media(992) {
+    padding-top: rem(80);
+  }
+  &__title {
+    max-width: 360px;
+    padding-bottom: rem(20);
+    @include media(992) {
+      padding-top: rem(20);
+    }
+    &_reverse {
+      text-align: right;
+      margin-left: auto;
+    }
+  }
+  &__content {
+    font-weight: 600;
+    font-size: rem(18);
+    color: $defaultColor;
+    max-width: 490px;
+    &_reverse {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+  &__button {
+    &_reverse {
+      margin-left: auto;
+      text-align: right;
+      a {
+        margin-left: auto;
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    top: rem(40);
+    @include media(992) {
+      top: 0;
+    }
+    img {
+      vertical-align: top;
+      max-width: 100%;
+    }
+  }
+}

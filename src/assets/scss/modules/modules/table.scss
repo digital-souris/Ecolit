@@ -1,0 +1,34 @@
+.table {
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__line {
+    &:nth-child(odd) {
+      background-color: #EAEAEA;
+    }
+  }
+  &__item {
+    min-width: 300px;
+    padding: rem(15) rem(20);
+    text-align: center;
+    font-size: rem(20);
+    color: $defaultColor;
+    @include media(768) {
+      font-size: rem(16);
+    }
+    b {
+      font-weight: 700;
+    }
+    span {
+      font-weight: 500;
+    }
+    i {
+      font-style: normal;
+      color: $accentColor;
+    }
+  }
+  &__container {
+    overflow: hidden;
+  }
+}

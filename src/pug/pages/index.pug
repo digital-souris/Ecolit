@@ -1,0 +1,83 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Webpack + Pug';
+  - var description = 'Description for Webpack + Pug';
+  - var pageClass = 'index-page';
+
+block content
+  section.section.section_index
+    .container
+      .row
+        .col-12.col-lg-6
+          h1.title.title_main Теплоизоляционная и звукопоглощающая смесь на основе перлита
+          a(href='#').button.button_main Подробнее
+    .slider
+      -for(let i = 0; i<3;i++)
+        .slider__item
+          a(href='#').slider__image(style="background-image: url(/assets/img/slide.jpg)")
+          .slider__footer.d-flex.align-items-stretch.justify-content-around
+            a(href='#').slider__button.d-flex.justify-content-center.align-items-center Эколит − 200
+              span
+                <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z" fill="white"/>
+                </svg>
+            .slider__info.d-flex.justify-content-center.align-items-center Для внешнего и внутреннего оштукатуривания стен
+  .container
+    .row
+      .section__line
+      h2.title.title_info делаем современное жилье комфортным и безопасным
+  section.section.section_preim
+    .preim__image
+      img(src="/assets/img/preim.jpg")
+    .container
+      .row
+        .col-9.col-lg-6.offset-3.offset-lg-6
+          h2.title.title_preim Наши Преимущества
+  section.section_blue.section_preim-second
+    .container
+      .row
+        .col-9.col-lg-6.offset-3.offset-lg-6
+          ul.preim__list
+            li Неограниченный срок эксплуатации
+            li Высокое качество
+            li Безопасен для здоровья человека
+            li Высокая паропроницаемость
+            li Пожаробезопасен
+            li Исключает появление плесени, грибка и бактерий
+  section.section_blue.section_about
+    .container
+      .row
+        .col-12
+          h2.title.title_about.title_white о нас
+          .about__desc ООО «СТРОЙЭНЕРГО» производитель строительных материалов «ЭКОЛИТ». Все материалы являются инновационными продуктами на территории России.
+    .container
+      .row.about
+        -for(let i = 0; i<6;i++)
+          .col-12.col-md-6.col-lg-4
+            .about__item
+              <svg width="107" height="80" viewBox="0 0 107 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="107" height="80" fill="white"/>
+              </svg>
+              .about__title Монолитная система изоляции
+    .about__image
+      img(src='/assets/img/about.jpg')
+  .section_video
+    .container
+      .row
+        .col-12
+          .video
+            iframe(src='https://www.youtube.com/embed/e7PLZP1Simo')
+  section.section_callback.section
+    .callback(style='background-image: url(/assets/img/callback.jpg)')
+      .callback__content
+        ul
+          li Стоимость ниже, чем у конкурентов
+          li Применяется снаружи и внутри помещения
+          li Высокая паропроницаемость
+          li Приготовление смеси за короткое время в больших объемах
+    .container
+      .row
+        .col-12.col-lg-6.offset-lg-6
+          h2.title.title_preim.title_callback оформи заявку и Стань нашим официальнным партнером
+          a(href='#').button.button_main Оформить заявку

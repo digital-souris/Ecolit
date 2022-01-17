@@ -1,0 +1,15 @@
+// Fonts here
+// see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+
+@font-face {
+  font-family: "Coworking";
+  src: url('/assets/fonts/Coworking.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Coworking.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/Coworking.woff') format('woff'), /* Pretty Modern Browsers */
+  url('/assets/fonts/Coworking.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('/assets/fonts/Coworking.svg') format('svg'); /* Legacy iOS */
+}
+@import "~@fontsource/montserrat/index.css";
+@import "~@fontsource/montserrat/600.css";
+@import "~@fontsource/montserrat/500.css";
+@import "~@fontsource/montserrat/700.css";

@@ -1,0 +1,99 @@
+.slider {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  .slick-dots {
+    position: absolute;
+    list-style-type: none;
+    left: 35px;
+    padding: 0;
+    margin: 0;
+    bottom: 200px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media(768) {
+      bottom: 150px;
+    }
+    li {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      margin-right: 7px;
+      &.slick-active {
+        background-color: #87E873;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+  @include media(992) {
+    position: relative;
+    width: 100%;
+  }
+  &__item {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+  &__image {
+    background-repeat: no-repeat;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    min-height: 738px;
+    background-position: center;
+    @include media(992) {
+      min-height: 100vh;
+    }
+  }
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    @include media(768) {
+      flex-direction: column;
+    }
+  }
+  &__button {
+    min-height: 171px;
+    width: 35%;
+    min-width: 240px;
+    background-color: $accentColor;
+    transition: all .25s;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: rem(20);
+    &_full {
+      width: 100%;
+      max-width: 100%;
+    }
+    svg {
+      margin-left: rem(10);
+    }
+    @include media(768) {
+      width: 100%;
+      min-height: 54px;
+    }
+  }
+  &__info {
+    width: 100%;
+    background: rgba(168, 168, 168, 0.3);
+    backdrop-filter: blur(40px);
+    text-align: center;
+    color: #fff;
+    font-size: rem(22);
+    font-weight: 600;
+    @include media(768) {
+      min-height: 76px;
+    }
+  }
+}

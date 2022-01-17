@@ -1,0 +1,233 @@
+.section {
+  max-width: 1920px;
+  margin: 0 auto;
+  &_index {
+    position: relative;
+    min-height: 738px;
+    display: flex;
+    align-items: center;
+    @include media(992) {
+      flex-direction: column-reverse;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  &_preim {
+    position: relative;
+    padding-top: rem(242-150);
+    @include media(768) {
+      padding-top: rem(60);
+    }
+    &-second {
+      padding-top: rem(40);
+      padding-bottom: rem(308);
+      @include media(1200) {
+        padding-bottom: rem(150);
+      }
+      @include media(768) {
+        padding-bottom: rem(100);
+      }
+    }
+  }
+
+  &_about {
+    padding-bottom: rem(514-96);
+    position: relative;
+    @include media(1200) {
+      padding-bottom: rem(300);
+    }
+    @include media(768) {
+      padding-bottom: rem(100);
+    }
+  }
+
+  &_video {
+    padding-top: rem(320);
+    @include media(992) {
+      padding-top: rem(100);
+    }
+  }
+
+  &_callback {
+    margin-top: rem(242);
+    padding-bottom: rem(230);
+    position: relative;
+    @include media(992) {
+      padding-bottom: rem(100);
+    }
+    @include media(768) {
+      margin-top: rem(100);
+    }
+  }
+  &_tech {
+    padding-top: rem(150);
+    padding-bottom: rem(150);
+    @include media(992) {
+      padding: rem(100) 0;
+    }
+  }
+
+
+  &_blue {
+    background-color: $defaultColor;
+  }
+
+
+  &_products {
+    min-height: 732px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    @include media(992) {
+      min-height: 600px;
+    }
+    @include media(768) {
+      min-height: 500px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      background: rgba(196, 196, 196, 0.3);
+      backdrop-filter: blur(40px);
+      @include media(992) {
+        width: 90%;
+      }
+    }
+  }
+  &_product {
+    padding-bottom: rem(140);
+  }
+  &_table {
+    padding-bottom: rem(150);
+  }
+
+  &_docs {
+    padding-top: rem(150);
+  }
+  &_partners {
+    position: relative;
+    padding-bottom: rem(80);
+  }
+  &_content {
+    margin-top: rem(80);
+    position: relative;
+    min-height: 555px;
+    p {
+      font-weight: 500;
+      font-size: rem(18);
+      color: $defaultColor;
+      line-height: 2;
+    }
+  }
+
+  &__line {
+    margin-top: rem(150);
+    height: 3px;
+    background: $defaultColor;
+  }
+}
+
+.video {
+  position: relative;
+  padding-top: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.image {
+  position: absolute;
+  width: 40%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.docs {
+  &-image {
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+}
+.partners {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  height: 100%;
+  bottom: rem(80);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 520px;
+  background-size: cover;
+}
+.item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  @include media(992) {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.product__text {
+  font-size: rem(18);
+  color: $defaultColor;
+  font-weight: 600;
+  p {
+    margin-bottom: rem(30);
+  }
+  ul {
+    padding: 0;
+    margin-left: 0;
+    list-style-type: none;
+    li {
+      margin-bottom: rem(40);
+      position: relative;
+      padding-left: rem(40);
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) rotate(45deg);
+        width: 10px;
+        height: 10px;
+
+        background: #87E873;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.tech {
+  padding: rem(60) 0;
+  a {
+    margin: 0 auto;
+  }
+  ul {
+    column-count: 2;
+    @include media(992) {
+      column-count: 1;
+    }
+  }
+}

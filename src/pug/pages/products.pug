@@ -1,0 +1,106 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Webpack + Pug';
+    - var description = 'Description for Webpack + Pug';
+    - var pageClass = 'index-page';
+
+block content
+    section.section_products.d-flex.align-items-center(style="background-image: url(/assets/img/products.jpg)")
+        .container
+            .row
+                .col-12.col-lg-6.offset-lg-6
+                    h1.title.title_main.title_products Материалы состоят из цемента, извести и минерального утеплителя   перлита
+    section.section.section_product
+        .product
+            .container
+                .row.d-flex.flex-column-reverse.flex-lg-row
+                    .col-12.col-lg-6
+                        h2.title.product__title Штукатурка «ЭКОЛИТ   200»
+                        .product__content
+                            p В результате смешивания с водой образуется теплозвукоизоляционная растворная смесь для утепления вертикальных и горизонтальных поверхностей.
+                        .product__button
+                            a(href='#').button.button_main Подробнее
+                    .col-12.col-lg-6
+                        .product__image
+                            img(src='/assets/img/product.jpg')
+        .product
+            .container
+                .row.d-flex.flex-column-reverse.flex-lg-row-reverse
+                    .col-12.col-lg-6
+                        h2.title.product__title.product__title_reverse Штукатурка «ЭКОЛИТ   200»
+                        .product__content.product__content_reverse
+                            p В результате смешивания с водой образуется теплозвукоизоляционная растворная смесь для утепления вертикальных и горизонтальных поверхностей.
+                        .product__button.product__button_reverse
+                            a(href='#').button.button_main Подробнее
+                    .col-12.col-lg-6
+                        .product__image
+                            img(src='/assets/img/product.jpg')
+    .container
+        .row
+            .section__line
+            h2.title.title_info СРАВНение ВАРИАНТОВ ЗАЩИТЫ СТЕНЫ ИЗ ГАЗОСИЛИКАТНЫХ БЛОКОВ
+    section.section_table
+        .container-fluid
+            .row
+                .col-12
+                    .table__container
+                        .table
+                            .table__line.d-flex.align-items-center.justify-content-between
+                                .table__item
+                                    b Критерии
+                                .table__item
+                                    span Крупноформатные стеновые камни
+                                        br
+                                        i + «ЭКОЛИТ» 40 мм»
+                                .table__item
+                                    span Крупноформатные стеновые камни
+                                        br
+                                        b + МинВата 50 мм
+                                .table__item
+                                    span Крупноформатные стеновые камни
+                                        br
+                                        b + Пенополистирол 50 мм
+                            .table__line.d-flex.align-items-center.justify-content-between
+                                .table__item
+                                    b Критерии
+                                .table__item
+                                    span Крупноформатные стеновые камни
+                                        br
+                                        i + «ЭКОЛИТ» 40 мм»
+                                .table__item
+                                    span Крупноформатные стеновые камни
+                                        br
+                                        b + МинВата 50 мм
+                                .table__item
+                                    span Крупноформатные стеновые камни
+                                        br
+                                        b + Пенополистирол 50 мм
+    section.section.section_blue
+        .container
+            .row
+                .col-12
+                    h2.title.title_video.title_white Видеоинструкция по применению
+        .container
+            .row
+                .col-12
+                    .video
+                        iframe(src='https://www.youtube.com/embed/e7PLZP1Simo')
+    section.section_docs.section_blue
+        .container
+            .row.d-flex.align-items-center
+                .col-12.col-lg-6
+                    h2.title.title_docs.title_white Мы подверждаем качество нашей продукции
+                .col-6.col-lg-3
+                    .docs-image
+                        img(src='/assets/img/doc.jpg')
+                .col-6.col-lg-3
+                    .docs-image
+                        img(src='/assets/img/doc.jpg')
+    section.section_blue.section_partners
+        .partners.d-none.d-lg-block(style='background-image: url(/assets/img/callback.jpg)')
+        .container
+            .row
+                .col-12.col-lg-6.offset-lg-6
+                    h2.title.title_preim.title_partners.title_white БесплАтная консультация в течении 24 часов
+                    a(href='#').button.button_main.button_white  Оформить заявку

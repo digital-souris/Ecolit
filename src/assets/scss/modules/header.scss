@@ -1,0 +1,77 @@
+// header style
+
+.header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: rem(29);
+  &__logo {
+    max-width: 185px;
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__phone {
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      color: $defaultColor;
+      font-size: rem(18);
+    }
+  }
+  &__menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    a {
+      color: $defaultColor;
+      font-size: rem(20);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    li {
+      &.active {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__burger {
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &__mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: #F0F0F0;
+    list-style-type: none;
+    text-align: center;
+    padding: rem(20) 0;
+    li {
+      padding-bottom: rem(20);
+      &:last-child {
+        padding-bottom: 0;
+      }
+      a {
+        text-decoration: none;
+        font-size: rem(20);
+        color: $defaultColor;
+        font-weight: 600;
+      }
+      &.active {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

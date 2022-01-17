@@ -1,0 +1,31 @@
+.button {
+  width: 100%;
+  font-weight: 600;
+  font-size: rem(18);
+  color: #fff;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $defaultColor;
+  text-decoration: none;
+  border: none;
+  transition: all .25s;
+  @include media(768) {
+    font-size: rem(14);
+  }
+  &:hover {
+    background-color: darken($defaultColor, 10%);
+  }
+  &_main {
+    margin-top: rem(40);
+    max-width: 240px;
+  }
+  &_white {
+    background-color: #fff;
+    color: $defaultColor;
+    &:hover {
+      background-color: darken(#fff, 10%);
+    }
+  }
+}

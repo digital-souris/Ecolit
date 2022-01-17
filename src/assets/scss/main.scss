@@ -1,0 +1,43 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  background: #F0F0F0;
+  @include media(768) {
+    font-size: 14px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page__content {
+  flex: 1 0 auto;
+}
+.page__footer {
+  flex: 0 0 auto;
+}
+
+@import "modules/index";

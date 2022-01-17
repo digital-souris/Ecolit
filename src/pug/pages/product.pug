@@ -1,0 +1,55 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Webpack + Pug';
+    - var description = 'Description for Webpack + Pug';
+    - var pageClass = 'index-page';
+
+block content
+    section.section.section_item.section.section_index
+        .container
+            .row
+                .col-12.col-lg-6
+                    .product__text
+                        p Раствор ««ЭКОЛИТ - 200» предназначен для:
+                        ul
+                            li Наружной теплоизоляции стен
+                            li Наружной теплоизоляции стен
+                            li Наружной теплоизоляции стен
+                            li Наружной теплоизоляции стен
+                            li Наружной теплоизоляции стен
+                            li Наружной теплоизоляции стен
+                    a(href='#').button.button_main Заказать
+        .item
+            .slider__item
+                .slider__image(style="background-image: url(/assets/img/slide.jpg)")
+                .slider__footer.d-flex.align-items-stretch.justify-content-around
+                    .slider__button.slider__button_full.d-flex.justify-content-center.align-items-center
+                        h1.title.title_white Штукатурка «ЭКОЛИТ   200»
+    .container
+        .row
+            .section__line
+    .section.section_content
+        .image.d-none.d-lg-block(style='background-image: url(/assets/img/content.jpg)')
+        .container
+            .row
+                .col-12.col-lg-7.offset-lg-5
+                    p Внешний теплоизоляционный слой, защищается от воздействия окружающей среды: декоративной штукатуркой, фасадной или структурной краской обладающей высокой паропроницаемой способностью.
+                    p Рекомендованы для применения в системах «дышащей» теплоизоляции. Внутренний теплоизоляционный слой может быть покрыт гипсовой шпаклевочной массой для создания гладкой (финишной) поверхности.
+                    p Вертикальные поверхности сухих растворов, для повышения их эксплуатационных характеристик, покрываются керамической плиткой или цементно – песчаным растровом через 72 часа после нанесения теплозвукоизоляционной штукатурки. Устройство теплоизоляционной штукатурки не требует дополнительного армирования.
+
+    section.section_tech
+        .container
+            .row
+                .col-12
+                    h2.title.title_tech.title_center ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+                    .tech
+                        .product__text
+                            ul
+                                li Наружной теплоизоляции стен
+                                li Наружной теплоизоляции стен
+                                li Наружной теплоизоляции стен
+                                li Наружной теплоизоляции стен
+                                li Наружной теплоизоляции стен
+                                li Наружной теплоизоляции стен
+                        a(href='#').button.button_main Заказать
